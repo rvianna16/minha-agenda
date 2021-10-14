@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Subscription } from 'rxjs';
+
+import { ContactsService } from 'src/app/services/contacts.service';
 
 @Component({
   selector: 'app-contact-form',
@@ -7,9 +11,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactFormComponent implements OnInit {
 
-  constructor() { }
+  id: number = 0;
+  subscription!: Subscription
+  contact: any = {};
+
+  constructor(
+    private contactsService: ContactsService,
+    private route: ActivatedRoute) {      
+  }
 
   ngOnInit(): void {
+    this.subscription = this.route.params.subscribe((params: any) => {
+      this.id = params['id'];
+    });    
+
+    this.contact = this.contactsService.getContact(this.id);    
+  }
+
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
   }
 
 }

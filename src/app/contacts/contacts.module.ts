@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 
 import { ContactsComponent } from './contacts.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
-import { ContactDetailComponent } from './contact-detail/contact-detail.component';
 import { ContactsRoutingModule } from './contacts-routing.module';
 
 
@@ -12,7 +11,7 @@ import { ContactsRoutingModule } from './contacts-routing.module';
   declarations: [
     ContactsComponent,
     ContactFormComponent,
-    ContactDetailComponent
+    
   ],
   imports: [
     CommonModule,

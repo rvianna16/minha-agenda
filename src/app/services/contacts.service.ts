@@ -17,4 +17,14 @@ export class ContactsService {
   getContacts() {
     return this.contacts;
   }
+
+  getContact(id: number) {
+    let contacts = this.getContacts();
+
+    for(let contact of contacts) {
+      if(contact.id == id) {
+        return contact
+      }
+    }
+  }
 }

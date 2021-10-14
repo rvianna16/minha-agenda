@@ -1,4 +1,12 @@
+.top-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
+  h3 {
+    margin: 25px 0;
+  }
+}
 .btn-floating {
   margin-left: 20px;
 }
