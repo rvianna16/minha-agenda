@@ -1,0 +1,14 @@
+<h3>Meus contatos</h3>
+<ul class="collection">
+  <li *ngFor="let contact of contacts" class="collection-item avatar">
+    <i class="material-icons circle">contacts</i>
+    <span class="title">{{ contact.name }}</span>
+    <p> {{ contact.number }} </p>
+    <div class="secondary-content">
+      <a class="btn-floating btn-medium cyan"><i class="material-icons">edit</i></a>
+      <a class="btn-floating btn-medium red"><i class="material-icons">delete</i></a>      
+    </div>   
+  </li>  
+</ul>
+
+
