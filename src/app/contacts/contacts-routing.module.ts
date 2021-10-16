@@ -5,9 +5,9 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { ContactsComponent } from './contacts.component';
 
 const contactsRoutes: Routes = [
-  { path: 'contacts', component: ContactsComponent},
-  {path: 'contacts/new', component: ContactsComponent},
-  {path: 'contacts/:id/edit', component: ContactFormComponent}
+  {path: '', component: ContactsComponent},
+  {path: 'new', component: ContactsComponent},
+  {path: ':id/edit', component: ContactFormComponent}
 
 ];
 
@@ -15,4 +15,5 @@ const contactsRoutes: Routes = [
   imports: [RouterModule.forChild(contactsRoutes)],
   exports: [RouterModule]
 })
+
 export class ContactsRoutingModule { }

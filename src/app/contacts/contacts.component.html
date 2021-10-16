@@ -11,7 +11,7 @@
     <div class="secondary-content">
       <a 
       class="btn-floating btn-medium cyan" 
-      [routerLink]="['/contacts', contact.id, 'edit']">
+      [routerLink]="[contact.id, 'edit']">
         <i class="material-icons">edit</i>
       </a>
       <a (click)="deleteContact(contact)" class="btn-floating btn-medium red"><i class="material-icons">delete</i></a>
@@ -19,3 +19,4 @@
   </li>
 </ul>
 
+<router-outlet></router-outlet>
