@@ -5,13 +5,12 @@
 ## 
 
 Este projeto foi desenvolvido para prática de rotas no Angular.
-Pude praticar conceitos como: Lazy loading, Route Guards e entender melhor os Services.<br>
-
+Pude praticar conceitos como: Lazy loading, Route Guards e entender melhor os Services.<br><br>
 Na tela inicial, o usuário é forçado a colocar um usuário e senha onde é feito uma autenticação bem simples para ter acesso a outras rotas.
 Também foi feito um CRUD da agenda, onde é possível criar, editar e deletar contatos, porém ao atualizar a página estes dados não são salvos.
----
 
-<br>
+
+---
 
 
 ## :arrow_down: Preview
