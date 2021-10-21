@@ -29,4 +29,8 @@ export class AuthService {
       this.showMenuEmitter.emit(false);
     }
   }
+
+  userIsAuth() {
+    return this.userAuth;
+  }
 }

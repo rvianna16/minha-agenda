@@ -27,4 +27,12 @@ export class ContactsService {
       }
     }
   }
+
+  getId() {
+    let contacts = this.getContacts();
+    let id = contacts.length > 1 ? contacts[contacts.length -1].id + 1 : 1;
+
+    return id;
+    
+  }
 }
