@@ -6,18 +6,16 @@ import { User } from './user';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
+  public user: User = new User();
 
-  public user: User = new User()
+  constructor(private authService: AuthService) {}
 
-  constructor(private authService: AuthService) { }
-
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   login() {
-    this.authService.login(this.user);        
+    this.authService.login(this.user);
   }
 }

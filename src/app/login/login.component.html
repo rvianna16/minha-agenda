@@ -3,16 +3,23 @@
   <div class="row">
     <div class="input-field col s6">
       <i class="material-icons prefix">account_circle</i>
-      <input [(ngModel)]="user.name" id="user" type="text" class="validate">
+      <input [(ngModel)]="user.name" id="user" type="text" class="validate" />
       <label for="user">Usuário</label>
     </div>
   </div>
   <div class="row">
     <div class="input-field col s6">
       <i class="material-icons prefix">https</i>
-      <input [(ngModel)]="user.password" id="password" type="password" class="validate">
+      <input
+        [(ngModel)]="user.password"
+        id="password"
+        type="password"
+        class="validate"
+      />
       <label for="password">Senha</label>
     </div>
   </div>
-  <button type="submit" class="btn light-blue darken-4" (click)="login()">Entrar</button>
+  <button type="submit" class="btn light-blue darken-4" (click)="login()">
+    Entrar
+  </button>
 </div>

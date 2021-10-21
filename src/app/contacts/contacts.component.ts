@@ -8,7 +8,6 @@ import { ContactsService } from '../services/contacts.service';
   styleUrls: ['./contacts.component.scss'],
 })
 export class ContactsComponent implements OnInit {
-  
   contacts: any[] = [];
 
   constructor(private contactsService: ContactsService) {}

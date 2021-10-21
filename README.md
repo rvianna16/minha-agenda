@@ -1,27 +1,56 @@
-# MyContacts
+<h1 align="center">
+    Minha agenda
+</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
+## 
 
-## Development server
+Este projeto foi desenvolvido para prática de rotas no Angular.
+Pude praticar conceitos como: Lazy loading, Route Guards e entender melhor os Services.<br>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Na tela inicial, o usuário é forçado a colocar um usuário e senha onde é feito uma autenticação bem simples para ter acesso a outras rotas.
+Também foi feito um CRUD da agenda, onde é possível criar, editar e deletar contatos, porém ao atualizar a página estes dados não são salvos.
+---
 
-## Code scaffolding
+<br>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## :arrow_down: Preview
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<p align="center" >
+  <img alt="Web Homepage" title"Web-Home" src="https://i.imgur.com/LwR18dq.png" width="800px">  
+  <img alt="Web Homepage" title"Web-Home" src="https://i.imgur.com/VDXsaTt.png" width="800px">   
+  <br><br>  
+  
+  
+</p>
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 🚀 Resultado do Projeto
 
-## Running end-to-end tests
+User: usuario
+<br>
+Pass: 123456
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+:arrow_right: <a href="https://minha-agenda.vercel.app/"> Minha agenda </a> :arrow_left:
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+#### 🎲 Rodando o projeto
+
+```bash
+
+# Clone o repositório
+$ git clone https://github.com/rvianna16/minha-agenda.git
+
+# Acesse a pasta do projeto no prompt de comando
+$ cd minha-agenda
+
+# Instale as dependências
+$ npm install
+
+# Execute o projeto
+$ ng serve
+
+# O projeto inciará na porta: 4200 - acesse http://localhost:4200 
+
+```

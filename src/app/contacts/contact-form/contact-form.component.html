@@ -5,35 +5,36 @@
     <div class="row">
       <div class="input-field col s6">
         <i class="material-icons prefix">account_circle</i>
-        <input 
-        
-        id="name" 
-        type="text" 
-        class="validate"      
-        [(ngModel)]="name" 
-        name="name"
-        placeholder="Nome"
-        required>
-       
+        <input
+          id="name"
+          type="text"
+          class="validate"
+          [(ngModel)]="name"
+          name="name"
+          placeholder="Nome"
+          required
+        />
       </div>
     </div>
     <div class="row">
       <div class="input-field col s6">
         <i class="material-icons prefix">phone</i>
-        <input 
-        [(ngModel)]="number" 
-        id="telephone" 
-        type="tel" 
-        class="validate"    
-        name="number"        
-        placeholder="Telefone"
-        required>
-        
+        <input
+          [(ngModel)]="number"
+          id="telephone"
+          type="tel"
+          class="validate"
+          name="number"
+          placeholder="Telefone"
+          required
+        />
       </div>
-    </div>    
+    </div>
   </form>
-  <button class="btn light-blue darken-4" (click)="editContact()">Salvar</button>
-  <button class="btn grey blue-grey darken-1" routerLink="/contacts">Voltar</button>
+  <button class="btn light-blue darken-4" (click)="editContact()">
+    Salvar
+  </button>
+  <button class="btn grey blue-grey darken-1" routerLink="/contacts">
+    Voltar
+  </button>
 </div>
-
-
